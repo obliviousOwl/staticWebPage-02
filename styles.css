@@ -2,7 +2,6 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .poppins-regular {
@@ -34,6 +33,21 @@
 
 .card {
     min-height: 550px;
+    height: 100%;
 }
 
 
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.categories-section{
+    background-color: #F6E6CB;
+}
+
+.carousel-item img {
+    height: 300px;
+    width: 1000px;
+    object-fit: cover;
+}
