@@ -1,5 +1,8 @@
 *{
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .poppins-regular {
@@ -28,3 +31,9 @@
 .home{
     background-color: #E7D4B5;
 }
+
+.card {
+    min-height: 550px;
+}
+
+
