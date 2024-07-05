@@ -12,54 +12,41 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <!-- End of google fonts -->
 
 </head>
 
 <body>
     <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navigation-bar text-secondary text-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#home">CodeCraft Academy</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#categories-section">Categories</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+    <nav class="navbar navbar-expand-lg navigation-bar text-secondary text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">CodeCraft Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories-section">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!-- End of Navbar -->
 
     <!-- Home Section -->
@@ -72,13 +59,39 @@
                     <h2 class="mt-2 mb-5">Your Gateway to Mastering Programming and Web Development</h2>
                 </div>
             </div>
-            
         </section>
         <!-- End of introduction -->
 
-        <!-- Featured Section -->
-        <section id="featured">
+        <hr>
 
+        <!-- Featured Section -->
+        <section id="featured" class="container py-5">
+            <h1 class="text-center">Featured</h1>
+            <div class="row justify-content-center">
+                <div class="card col-3 mx-2">
+                    <img src="images/python.png" class="card-img-top img-fluid mt-2" style="height: 200px;" alt="Python">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Python's design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
+                    </div>
+                </div>
+                <div class="card col-3 mx-2">
+                    <img src="images/javascript.png" class="card-img-top img-fluid mt-2" style="height: 200px;" alt="JavaScript">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.</p>
+                    </div>
+                </div>
+                <div class="card col-3 mx-2">
+                    <img src="images/mongo.png" class="card-img-top img-fluid mt-2" style="height: 200px;" alt="MongoDB">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MongoDB</h5>
+                        <p class="card-text">MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and current versions are licensed under the Server Side Public License.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         </section>
         <!-- End of Featured Section -->
 
@@ -98,11 +111,13 @@
             <div class="accordion" id="resourcesAccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Resource 1
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#resourcesAccordion">
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#resourcesAccordion">
                         <div class="accordion-body">
                             Description of Resource 1.
                             <a href="#" class="btn btn-primary">View Resource</a>
@@ -111,11 +126,13 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Resource 2
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#resourcesAccordion">
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#resourcesAccordion">
                         <div class="accordion-body">
                             Description of Resource 2.
                             <a href="#" class="btn btn-primary">View Resource</a>
@@ -124,11 +141,13 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Resource 3
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#resourcesAccordion">
                         <div class="accordion-body">
                             Description of Resource 3.
                             <a href="#" class="btn btn-primary">View Resource</a>
@@ -137,10 +156,10 @@
                 </div>
             </div>
         </div>
-                    
 
-        </section>
-        <!-- End of Sample resources section -->
+
+    </section>
+    <!-- End of Sample resources section -->
 
     </section>
     <!--  End of Categories section -->
