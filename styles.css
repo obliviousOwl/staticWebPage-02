@@ -1,0 +1,30 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+.navigation-bar{
+    background-color: #A0937D;
+}
+
+.home{
+    background-color: #E7D4B5;
+}
