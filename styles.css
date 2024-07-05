@@ -51,3 +51,12 @@
     width: 1000px;
     object-fit: cover;
 }
+
+.about-section {
+    background-color: #B6C7AA;
+}
+
+#mission h3,
+#mission p {
+    font-style: italic;
+}
