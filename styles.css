@@ -48,7 +48,6 @@
 
 .carousel-item img {
     height: 300px;
-    width: 1000px;
     object-fit: cover;
 }
 
@@ -59,4 +58,15 @@
 #mission h3,
 #mission p {
     font-style: italic;
+}
+
+.social-media-link a {
+    text-decoration: none; 
+    color: black; 
+}
+
+
+
+.footer {
+    background-color: #A0937D;
 }

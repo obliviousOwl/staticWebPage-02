@@ -20,7 +20,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navigation-bar text-secondary text-light">
+    <nav class="navbar navbar-expand-lg navigation-bar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">CodeCraft Academy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,7 +29,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -43,6 +43,7 @@
             </div>
         </div>
     </nav>
+    
     <!-- End of Navbar -->
 
     <!-- Home Section -->
@@ -50,54 +51,50 @@
         <!-- introduction -->
         <section id="introduction" class="container text-center">
             <div class="row justify-content-center">
-                <div class="col-8">
-                    <h1 class="mt-5 mb-1">Welcome to CodeCraft Academy </h1>
+                <div class="col-md-8">
+                    <h1 class="mt-5 mb-1">Welcome to CodeCraft Academy</h1>
                     <h4 class="mt-2 mb-5">Your Gateway to Mastering Programming and Web Development</h4>
                 </div>
             </div>
         </section>
         <!-- End of introduction -->
-
-
+    
         <!-- Featured Section -->
         <section id="featured" class="container py-5">
             <h2 class="text-center">Featured</h2>
             <div class="row justify-content-center">
-                <div class="card col-3 mx-2">
-                    <img src="images/python.png" class="card-img-top mt-2" alt="Python">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Python</h5>
-                        <p class="card-text">Python's design philosophy emphasizes code readability with the use of
-                            significant indentation. Python is dynamically typed and garbage-collected. It supports
-                            multiple programming paradigms, including structured, object-oriented and functional
-                            programming.</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/python.png" class="card-img-top mt-2" alt="Python">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Python's design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-3 mx-2">
-                    <img src="images/javascript.png" class="card-img-top mt-2" alt="JavaScript">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">JavaScript</h5>
-                        <p class="card-text">JavaScript, often abbreviated as JS, is a programming language and core
-                            technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client
-                            side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the
-                            client code.</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/javascript.png" class="card-img-top mt-2" alt="JavaScript">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-3 mx-2">
-                    <img src="images/mongo.png" class="card-img-top mt-2" alt="MongoDB">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">MongoDB</h5>
-                        <p class="card-text">MongoDB is a source-available, cross-platform, document-oriented database
-                            program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with
-                            optional schemas. MongoDB is developed by MongoDB Inc. and current versions are licensed
-                            under the Server Side Public License.</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/mongo.png" class="card-img-top mt-2" alt="MongoDB">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MongoDB</h5>
+                            <p class="card-text">MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and current versions are licensed under the Server Side Public License.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End of Featured Section -->
-
     </section>
+    
     <!-- End of Home section -->
 
     <!-- Categories section -->
@@ -105,53 +102,54 @@
         <!-- Categories Listing section -->
         <section id="categories" class="container py-4">
             <div class="row justify-content-center">
-                <h2 class="text-center">Categories</h2>
-                <div id="categories-carousel" class="carousel slide col-5 my-4" data-bs-ride="carousel"
-                    data-bs-interval="3000">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#categories-carousel" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#categories-carousel" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#categories-carousel" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                <div class="col-lg-5 col-md-12 my-4">
+                    <h2 class="text-center">Categories</h2>
+                    <div id="categories-carousel" class="carousel slide my-4" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#categories-carousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#categories-carousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#categories-carousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/frontend.jpg" class="d-block w-100" alt="Frontend">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/backend.png" class="d-block w-100" alt="Backend">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/fullstack.jpg" class="d-block w-100" alt="Fullstack">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#categories-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#categories-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/frontend.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/backend.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/fullstack.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#categories-carousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#categories-carousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <div class="col-5 my-4">
-                    <h3>Explore our categories</h3>
-                    <p>Unlock the world of programming and web development through our diverse range of categories</p>
-                    <p>Choose your path and elevate your skills with expert-curated resources tailored to your learning
-                        journey.</p>
+                <div class="col-lg-5 col-md-12 my-4">
+                    <h3 class="text-center">Explore our categories</h3>
+                    <p class="text-center">Unlock the world of programming and web development through our diverse range of categories</p>
+                    <p class="text-center">Choose your path and elevate your skills with expert-curated resources tailored to your learning journey.</p>
                 </div>
             </div>
         </section>
         <!-- End of categories listing -->
-
+    
         <!-- Sample resources section -->
         <section class="resource-section">
             <div class="container mt-4">
-                <h2>Resources</h2>
+                <h2 class="text-center">Resources</h2>
                 <div class="accordion" id="resourcesAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -164,11 +162,13 @@
                             data-bs-parent="#resourcesAccordion">
                             <div class="accordion-body">
                                 HTML / CSS
-                                <a href="https://www.w3schools.com/html/" class="btn btn-primary" target=”_blank”>View Resource</a>
+                                <a href="https://www.w3schools.com/html/" class="btn btn-primary" target="_blank">View
+                                    Resource</a>
                             </div>
                             <div class="accordion-body">
                                 Bootstrap
-                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="btn btn-primary" target=”_blank”>View Resource</a>
+                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                    class="btn btn-primary" target="_blank">View Resource</a>
                             </div>
                         </div>
                     </div>
@@ -183,11 +183,13 @@
                             data-bs-parent="#resourcesAccordion">
                             <div class="accordion-body">
                                 expressjs
-                                <a href="https://expressjs.com/" class="btn btn-primary" target=”_blank”>View Resource</a>
+                                <a href="https://expressjs.com/" class="btn btn-primary" target="_blank">View
+                                    Resource</a>
                             </div>
                             <div class="accordion-body">
-                            MongoDB
-                                <a href="https://www.mongodb.com/docs/" class="btn btn-primary" target=”_blank”>View Resource</a>
+                                MongoDB
+                                <a href="https://www.mongodb.com/docs/" class="btn btn-primary" target="_blank">View
+                                    Resource</a>
                             </div>
                         </div>
                     </div>
@@ -201,8 +203,9 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#resourcesAccordion">
                             <div class="accordion-body">
-                                python
-                                <a href="https://www.w3schools.com/python/python_ml_getting_started.asp" class="btn btn-primary" target=”_blank”>View Resource</a>
+                                Python
+                                <a href="https://www.w3schools.com/python/python_ml_getting_started.asp"
+                                    class="btn btn-primary" target="_blank">View Resource</a>
                             </div>
                         </div>
                     </div>
@@ -210,45 +213,78 @@
             </div>
         </section>
         <!-- End of Sample resources section -->
-
     </section>
+    
     <!--  End of Categories section -->
 
     <!-- About Section -->
     <section id="about" class="about-section">
-
         <!-- Mission statement -->
         <section id="mission" class="container">
-        <h2 class="text-center py-4">Mission Statement</h2>
-            <div class="row justify-content-center my-4">
-                <div class="col-5">
+            <h2 class="text-center pt-4">Mission Statement</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-5 col-md-6">
                     <h3>"Our Mission at CodeCraft"</h3>
                 </div>
-                <div class="col-5">
-                    <p>"At CodeCraft, our mission is to empower individuals worldwide to excel in programming and web development. We strive to provide accessible and comprehensive resources that inspire learning, creativity, and innovation. Through a supportive community and expert guidance, we aim to equip learners of all backgrounds with the skills and confidence to succeed in today's tech-driven world. Join us in transforming passion into proficiency and turning ideas into impactful solutions with CodeCraft."</p>
+                <div class="col-lg-7 col-md-6">
+                    <p>"At CodeCraft, our mission is to empower individuals worldwide to excel in programming and web
+                        development. We strive to provide accessible and comprehensive resources that inspire learning,
+                        creativity, and innovation. Through a supportive community and expert guidance, we aim to equip
+                        learners of all backgrounds with the skills and confidence to succeed in today's tech-driven
+                        world. Join us in transforming passion into proficiency and turning ideas into impactful
+                        solutions with CodeCraft."</p>
                 </div>
             </div>
-
-            <div class="row justify-content-center my-4">
-                <div class="col-5">
-                    <p>"At CodeCraft, we are dedicated to fostering excellence in tech education. Our mission is to democratize learning by providing high-quality, hands-on resources that empower individuals to build, innovate, and succeed in programming and web development. Through a commitment to continuous improvement and community collaboration, we strive to cultivate a diverse, inclusive environment where curiosity thrives and skills flourish. Join us on a journey of discovery and mastery at CodeCraft, where every line of code shapes a brighter future."</p>
+    
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-7 col-md-6">
+                    <p>"At CodeCraft, we are dedicated to fostering excellence in tech education. Our mission is to
+                        democratize learning by providing high-quality, hands-on resources that empower individuals to
+                        build, innovate, and succeed in programming and web development. Through a commitment to
+                        continuous improvement and community collaboration, we strive to cultivate a diverse, inclusive
+                        environment where curiosity thrives and skills flourish. Join us on a journey of discovery and
+                        mastery at CodeCraft, where every line of code shapes a brighter future."</p>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5 col-md-6">
                     <h3>"Empowering Excellence in Tech: The CodeCraft Mission"</h3>
                 </div>
             </div>
-
         </section>
         <!-- End of mission statement -->
-
+    
         <!-- Contact information -->
-        <section id="contact">
-
+        <section id="contact" class="container">
+            <h2 class="text-center my-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 text-center">
+                    <h4>Contact Information</h4>
+                    <h5>Email: CodeCraft@academy.com</h5>
+                    <h5>Phone: 09123456789</h5>
+                    <h5>Address: Anaheim, CA 92802, USA</h5>
+                </div>
+                <div class="col-lg-5 col-md-6 social-media-link text-center mt-4 mt-md-0">
+                    <h4>Social Media</h4>
+                    <a href="https://www.facebook.com" target="_blank"><h5>Facebook</h5></a>
+                    <a href="https://www.linkedin.com" target="_blank"><h5>Linkedin</h5></a>
+                    <a href="https://www.instagram.com" target="_blank"><h5>Instagram</h5></a>
+                    <a href="https://www.github.com" target="_blank"><h5>Github</h5></a>
+                </div>
+            </div>
         </section>
+        <!-- End of contact information -->
+    </section>
+    
         <!-- End of contact information -->
 
     </section>
     <!-- End of about section -->
+    <section class="footer-section">
+        <footer class="footer d-flex flex-row justify-content-center">
+            <div>&copy; 2024</div>
+            <div>&nbsp;|&nbsp;</div>
+            <div>All rights reserved.</div>
+          </footer>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
